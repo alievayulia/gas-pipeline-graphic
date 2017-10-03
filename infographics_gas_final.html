@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+ integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+ crossorigin="anonymous"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="charts/chart.js"></script>
+
+<link type="text/css" rel="stylesheet" href="https://static-01-www.publicintegrity.org/files/css/css_87lQy8jg9CO8A0gDGkcMmXZ1TLokElBJX3hSS9y0o-Y.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static-01-www.publicintegrity.org/files/css/css_RF40MzGmt1z7GjMZ3O7HdAYvFAadh30O4llmRpg5lXw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static-01-www.publicintegrity.org/files/css/css_waecEipJ-ge0SG7miDOvllB66n0H0U0uMZh523Zk8Ac.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static-01-www.publicintegrity.org/files/css/css_FHXAPtlfTarNyOLfyiy2d1YuPUWtZNWGSm2HfDkOiHA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static-01-www.publicintegrity.org/sites/publici/modules/marketing/css/signup-form-collapsed.css?orrh91" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static-01-www.publicintegrity.org/files/css/css_8hU3VF9C0nGaGbOzWpI6XB6x-nc2OlVfmL0Em6CGrO0.css" media="all" />
+<title> Infographics for natural gas pipeline project </title>
+</head>
+<body>
+
+<div class="svg_ferc">
+<h1> Infographics for natural gas pipeline project </h1>
+
+</br>
+
+<p> By <a href="https://www.publicintegrity.org/authors/iuliia-alieva"> Iuliia Alieva </a> </p>
+
+</div>
+  <style>
+  .svg_ferc {
+  	max-width: 1000px;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+  .svg_ferc h2 {
+  	padding-bottom: 8px;
+  }
+  .svg_ferc p {
+  	margin-bottom: 0;
+  	padding-bottom: 10px;
+  }
+  .graph {
+    max-width: 100%
+  }
+  .svgtext {font-size: 16px
+  }
+    @media (max-width: 640px) {
+  .svgtext {font-size: 20px;
+  }
+  }
+    </style>
+
+<div class="svg_ferc">
+</br>
+<h2> Rapid increase in U.S. exports of natural gas </h2>
+</br>
+<?php
+drupal_add_library('publici_theme', 'highcharts');
+?>
+<div id="afp"></div>
+</br>
+<p style="font-size:80%;color:#666">Source: U.S. Energy Information Administration </p>
+<script>
+
+jQuery(function () {
+    jQuery('#afp').highcharts({
+
+        colors: ['green','#ff6100','#ff9900','rgb(150,150,150)'],
+        title: {
+            display:'null',
+            text: ' ',
+            x: -20 //center
+        },
+        subtitle: {
+            display:'null',
+            text: ' ',
+            x: -20
+        },
+        credits: {
+            enabled: false
+},
+        xAxis: {
+            labels: {
+                style: {
+                    fontSize: '10px',
+                }
+            },
+            categories: ['1976', '1980', '1984', '1988', '1992', '1996','2000','2004','2008','2012','2016']
+        },
+        yAxis: {
+
+            title: {
+                text: 'Millions of cubic feet'
+            },
+            labels: {
+                formatter: function () {
+                    return Highcharts.numberFormat(this.value, 0)}
+                    // step: 2
+                },
+           min : 0,
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+              valueSuffix: ' MMcf'
+        },
+        legend: {
+           enabled: false,
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Export',
+            data: [64710, 48731, 54753, 73638, 216282, 153393, 243716, 854138, 963263, 1618828, 2335448],
+            marker: {
+                  enabled: false
+             }
+        }]
+    });
+});
+Highcharts.setOptions({
+		lang: {
+			thousandsSep: ','
+		}
+	});
+</script>
+
+</br>
+</br>
+<h2> A big year for Appalachian pipeline projects </h2>
+</br>
+<p> Proposals to build, expand or modify interstate natural-gas pipelines in the shale-gas states of Pennsylvania, Ohio and West Virginia soared in 2015. Companies sometimes split complex applications, such as the 11 most significant projects from that year, into more than one case before FERC. </p>
+<div id="container4" class="graph">
+<script>
+  Highcharts.chart('container4', {
+    colors: [
+    '#146A0D', '#555855'
+    ],
+    credits: {
+        enabled: false
+    },
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: ' '
+    },
+    xAxis: {
+        categories: ['1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Number of cases',
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        }
+    },
+    tooltip: {
+      headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+      pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+          '<td style="padding:0"><b>{point.y} cases</b></td></tr>',
+      footerFormat: '</table>',
+      shared: true,
+      useHTML: true
+  },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Number of cases',
+        data: [0,1,1,0,4,1,2,2,4,2,3,1,3,8,10,3,7,14,36,3],
+    }]
+});
+</script>
+
+<p style="font-size:80%;color:#666"> Source: Center for Public Integrity/StateImpact Pennsylvania analysis of FERC data </p>
+</div>
+</br>
+</br>
+<h2> After FERC, jobs in the energy industry await </h2>
+</br>
+<p> The lion’s share of FERC’s 35 former commissioners have spent some or all of their career after leaving the agency at energy companies or law firms and other organizations that assist them. </p>
+
+<svg viewbox="0 0 600 420" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0,10)"><g><path class="link" d="M3,168.28571428571428C300,168.28571428571428 300,153.28571428571428 597,153.28571428571428" style="stroke-width: 306.571; fill: none; stroke: rgb(93, 163, 51); stroke-opacity: 0.4;"><title>29</title></path><path class="link" d="M3,337.4285714285714C300,337.4285714285714 300,332.4285714285714 597,332.4285714285714" style="stroke-width: 31.7143; fill: none; stroke: rgb(171, 164,179); stroke-opacity: 0.4;"><title>3</title></path><path class="link" d="M3,363.85714285714283C300,363.85714285714283 300,368.85714285714283 597,368.85714285714283" style="stroke-width: 21.1429; fill: none; stroke: rgb(171, 164, 179); stroke-opacity: 0.4;"><title>2</title></path><path class="link" d="M3,379.7142857142857C300,379.7142857142857 300,394.7142857142857 597,394.7142857142857" style="stroke-width: 10.5714; fill: none; stroke: rgb(171, 164, 179); stroke-opacity: 0.4;"><title>1</title></path></g><g><g class="node" transform="translate(597,389.42857142857144)"><rect height="10.571428571428571" width="3" style="fill: rgb(102, 102, 102);"><title>Academia (1)
+1</title></rect><text x="-6" y="5.285714285714286" dy=".35em" text-anchor="end" class="svgtext" style="font-family: Arial, Helvetica; pointer-events: none;">Academia (1)</text></g><g class="node" transform="translate(597,0)"><rect height="306.57142857142856" width="3" style="fill: rgb(102, 102, 102);"><title>Energy industry (29)
+29</title></rect><text x="-6" y="153.28571428571428" dy=".35em" text-anchor="end" class="svgtext" style="font-family: Arial, Helvetica; pointer-events: none;">Energy industry (29)</text></g><g class="node" transform="translate(597,358.2857142857143)"><rect height="21.142857142857142" width="3" style="fill: rgb(102, 102, 102);"><title>Government (2)
+2</title></rect><text x="-6" y="10.571428571428571" dy=".35em" text-anchor="end" class="svgtext" style="font-family: Arial, Helvetica; pointer-events: none;">Government (2)</text></g><g class="node" transform="translate(597,316.57142857142856)"><rect height="31.714285714285715" width="3" style="fill: rgb(102, 102, 102);"><title>Unclear (3)
+3</title></rect><text x="-6" y="15.857142857142858" dy=".35em" text-anchor="end" class="svgtext" style="font-family: Arial, Helvetica; pointer-events: none;">Unclear (3)</text></g><g class="node" transform="translate(0,15)"><rect height="370" width="3"><title>FERC
+35</title></rect><text x="9" y="185" dy=".35em" text-anchor="start" class="svgtext" style="font-family: Arial, Helvetica; pointer-events: none;">FERC</text></g></g></g></svg>
+
+</br>
+<p style="font-size:80%;color:#666"> Source: Center for Public Integrity/StateImpact Pennsylvania analysis </p>
+
+</div>
+</body>
+</html>
